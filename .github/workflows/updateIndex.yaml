@@ -19,11 +19,13 @@ jobs:
       - name: Git Checkout
         uses: actions/checkout@v4
       - name: Helm Installation
-        uses: azure/setup-helm@v1.1
+        uses: azure/setup-helm@v4.2.0
         with:
           version: v3.7.0
+          
       - name: Update Index
         run: |
+          export HELM_EXPERIMENTAL_OCI=1
           helm repo index .
           git config --global user.email "bot@braingohurty.co.uk"
           git config --global user.name "Repo Bot"
