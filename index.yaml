@@ -1,8 +1,33 @@
 apiVersion: v1
 entries:
+  argocd:
+  - apiVersion: v2
+    created: "2024-09-02T14:25:06.374904035Z"
+    dependencies:
+    - name: helm-library
+      repository: https://ravelin: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@raw.githubusercontent.com/ravelin/helm-repo/main/index.yaml
+      version: 0.0.1
+    - name: argo-cd
+      repository: https://argoproj.github.io/argo-helm
+      version: 7.4.5
+    description: Helm chart to install ArgoCD
+    digest: e005ca836035bede7ce7161539139417686d9422c1b2c43d591c78718e0acabd
+    keywords:
+    - argocd
+    - gitops
+    maintainers:
+    - email: david@braingohurty.co.uk
+      name: David Murray
+    name: argocd
+    sources:
+    - https://github.com/Ravelin/k8s-applications
+    type: application
+    urls:
+    - argocd-1.0.0.tgz
+    version: 1.0.0
   helm-library:
   - apiVersion: v2
-    created: "2024-08-31T21:38:17.714565591Z"
+    created: "2024-09-02T14:25:06.376008213Z"
     description: Library which provides reusable templates and abstraction for resources
     digest: c62fd6cc19d680aeb9037e207b94dae92cd9251f7f26d69c7ee8e70fa5233e4f
     maintainers:
@@ -13,4 +38,4 @@ entries:
     urls:
     - helm-library-0.0.1.tgz
     version: 0.0.1
-generated: "2024-08-31T21:38:17.71144842Z"
+generated: "2024-09-02T14:25:06.360849568Z"
