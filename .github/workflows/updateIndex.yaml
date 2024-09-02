@@ -28,4 +28,5 @@ jobs:
           git config --global user.name "Repo Bot"
           git add index.yaml
           git commit -m "Update chart index"
+          git merge origin/main --ff-only
           git push
