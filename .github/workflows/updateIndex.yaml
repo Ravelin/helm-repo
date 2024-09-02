@@ -16,7 +16,7 @@ jobs:
     
     steps:
       - name: Git Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Helm Installation
         uses: azure/setup-helm@v1.1
         with:
@@ -28,6 +28,9 @@ jobs:
           git config --global user.name "Repo Bot"
           git add index.yaml
           git commit -m "Update chart index"
-          git pull
-          git merge origin/main
           git push
+
+      - name: Helm Push
+        run: |
+          helm push . oci://ghcr.io/ravelin/helm-repo
+      
