@@ -26,7 +26,8 @@ jobs:
           helm repo index .
           git config --global user.email "bot@braingohurty.co.uk"
           git config --global user.name "Repo Bot"
-          git merge origin/main
           git add index.yaml
           git commit -m "Update chart index"
+          git pull
+          git merge origin/main
           git push
