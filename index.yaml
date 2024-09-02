@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   applications:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.293356817Z"
+    created: "2024-09-02T19:36:45.935838505Z"
     description: Helm chart containing all applications to boostrap a Kubernetes cluster.
     digest: 05fa6813c8f67d41947e6dcfcb12005483f09154b88f558942970e7bb0d3a65b
     maintainers:
@@ -15,7 +15,7 @@ entries:
     version: 0.0.1
   argocd:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.312140022Z"
+    created: "2024-09-02T19:36:45.949079529Z"
     dependencies:
     - name: helm-library
       repository: https://raw.githubusercontent.com/ravelin/helm-repo/main/index.yaml
@@ -40,7 +40,7 @@ entries:
     version: 1.0.0
   argocd-crds:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.313459177Z"
+    created: "2024-09-02T19:36:45.951603743Z"
     description: Custom Resource Definitions for ArgoCD
     digest: e6dac5068f2e0d5aecc0367fcfd1fd2855b5d59391b7fa3aca97d6f8e54a2dbc
     maintainers:
@@ -55,7 +55,7 @@ entries:
     version: 0.0.1
   calico-crds:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.317764397Z"
+    created: "2024-09-02T19:36:45.95616119Z"
     description: Custom Resource Definitions for Calico
     digest: 6169f24872ee5915d84368ad8351b508c5ea1855b2ab56ac0ac97d2718c3c6c8
     maintainers:
@@ -70,7 +70,7 @@ entries:
     version: 0.0.1
   external-secrets-crds:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.31913027Z"
+    created: "2024-09-02T19:36:45.957503922Z"
     description: Custom Resource Definitions for External Secrets Operator
     digest: 12e4ba8bbf8eadb1b81b230c7d6527fb7d62e25aee22b3246da1fab2f86cfaba
     maintainers:
@@ -85,7 +85,7 @@ entries:
     version: 0.0.1
   helm-library:
   - apiVersion: v2
-    created: "2024-09-02T19:34:34.320316114Z"
+    created: "2024-09-02T19:36:45.958631993Z"
     description: Library which provides reusable templates and abstraction for resources
     digest: c62fd6cc19d680aeb9037e207b94dae92cd9251f7f26d69c7ee8e70fa5233e4f
     maintainers:
@@ -96,4 +96,4 @@ entries:
     urls:
     - helm-library-0.0.1.tgz
     version: 0.0.1
-generated: "2024-09-02T19:34:34.29277175Z"
+generated: "2024-09-02T19:36:45.934658138Z"
