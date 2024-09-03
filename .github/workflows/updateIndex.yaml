@@ -25,15 +25,10 @@ jobs:
           
       - name: Update Index
         run: |
-          export HELM_EXPERIMENTAL_OCI=1
           helm repo index .
           git config --global user.email "bot@braingohurty.co.uk"
           git config --global user.name "Repo Bot"
           git add index.yaml
           git commit -m "Update chart index"
           git push
-
-      - name: Helm Push
-        run: |
-          helm push . oci://ghcr.io/ravelin/helm-repo
       
