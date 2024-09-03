@@ -2,7 +2,7 @@ name: Update Index
 
 on:
   push:
-    branches: [ main ]
+    branches: [ gh-pages ]
     paths:
       - '**.tgz'
   workflow_dispatch:
